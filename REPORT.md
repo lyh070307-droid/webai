@@ -11,7 +11,7 @@
 
 | 배포 URL | https://lyh.smu.ai.kr |
 
-| 작성일 | 2026-10-13 |
+| 작성일 | 2026-10-18 |
 
 
 
@@ -65,11 +65,11 @@
 
 | F-06 | 하단 footer에 `YYYY-MM-DD` 형식 최종수정일 표기 및 커밋 날짜 일치 | Pass | [캡처](images/check_F06.png) |
 
-| Q-HTML | W3C HTML 검사기(https://validator.w3.org/)로 배포 URL 검사 | ( ) | ( ) |
+| Q-HTML | W3C HTML 검사기(https://validator.w3.org/)로 배포 URL 검사 | Pass | [캡처](images/HTML.png) |
 
-| Q-CSS | W3C CSS 검사기(https://jigsaw.w3.org/css-validator/)로 검사 + 인라인 style 사용 여부 확인 + 창 크기 변경 확인 | ( ) | ( ) |
+| Q-CSS | W3C CSS 검사기(https://jigsaw.w3.org/css-validator/)로 검사 + 인라인 style 사용 여부 확인 + 창 크기 변경 확인 | Fail | [캡처](images/CSS.png) |
 
-| Q-DEPLOY | 배포 URL에서 모든 링크 클릭, 모든 이미지 표시 확인 | ( ) | ( ) |
+| Q-DEPLOY | 배포 URL에서 모든 링크 클릭, 모든 이미지 표시 확인 | Pass | [캡처](images/DEPLOY.png) |
 
 
 
@@ -85,7 +85,7 @@
 
 
 
-**완성도 = 충족(Pass)한 요구사항 수 ÷ 평가 대상 요구사항 수(9) = ( ) / 9 = ( )%**
+**완성도 = 충족(Pass)한 요구사항 수 ÷ 평가 대상 요구사항 수(9) = (9) / 9 = (1)%**
 
 
 
@@ -101,7 +101,7 @@
 
 |---|---|---|---|
 
-| (HTML-01) | (W3C HTML 검사기에서 Error 및 Warning이 전혀 없어야 함) | (lang 속성 누락 및 <hr> 태그 위치 오류로 인한 검사기 경고/에러 발생) | (HTML 표준 문서 구조 규칙을 정확히 숙지하지 못하고 태그를 배치했음) |
+| (Q-CSS) | (W3C CSS 검사기에서 Error 및 Warning이 전혀 없어야 함) | (외부 CDN 폰트 파일 구조상의 비표준 속성에 의한 경고(Warning) 발생) | (외부 웹 폰트 제공 업체의 벤더 전용 속성 포함으로 검사기 경고 유발됨) |
 
 
 
@@ -115,7 +115,7 @@
 
 
 
-(웹페이지를 디자인할 때 HTML 구조와 CSS 선택자(id, class)의 범위를 사전에 명확히 설계한 뒤 스타일을 적용하여 시행착오를 줄이겠음.)
+(개발을 완료한 후 막바지에 검사기를 돌리기보다, 코드를 작성하는 중간중간 수시로 W3C 검사기를 활용하여 문법 오류나 태그 짝(중괄호 등)을 점검하겠습니다.)
 
 
 
