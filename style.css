@@ -1,5 +1,3 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +18,6 @@ body {
   padding: 40px 20px;
   background-color: #f6f5f0;
   color: #2b332c;
-  /* W3C 검사기 경고를 일으키는 벤더 폰트를 전부 제거한 표준 폰트 선언 */
   line-height: 1.6;
 }
 
