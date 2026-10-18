@@ -1,0 +1,8 @@
+li.done {color: #81c784;}
+li.planed {color: #757575;}
+li.done a {color: #81c784; text-decoration: none;}
+body {background-color: #121212; color: #e0e0e0;
+      width: 1000px; margin-left: auto; margin-right: auto;}
+a {color: #64b5f6;}
+header a {text-decoration: none;}
+#courses a {text-decoration: none;}
