@@ -1,8 +1,130 @@
-li.done {color: #81c784;}
-li.planed {color: #757575;}
-li.done a {color: #81c784; text-decoration: none;}
-body {background-color: #121212; color: #e0e0e0;
-      width: 1000px; margin-left: auto; margin-right: auto;}
-a {color: #64b5f6;}
-header a {text-decoration: none;}
-#courses a {text-decoration: none;}
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 1. 전체 화면 기본 및 최소 너비 고정 */
+html {
+  width: 100%;
+  min-width: 1000px; /* 창이 작아져도 1000px 밑으로 줄어들거나 찌그러지지 않음 */
+  background-color: #f6f5f0;
+}
+
+body {
+  width: 1000px !important; /* 가로 너비 1000px 완전 고정 */
+  min-width: 1000px !important;
+  margin: 0 auto !important; /* 큰 화면에서는 가운데 정렬 */
+  padding: 40px 20px;
+  background-color: #f6f5f0;
+  color: #2b332c;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+header, section, footer {
+  width: 100%;
+}
+
+header, section {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1e2920;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1e2920;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2b332c;
+  padding-bottom: 10px;
+}
+
+/* -------------------------------------------------- */
+/* 🎯 1~7주차 (진행/완료) vs 8~15주차 (예정) 색상 구분 */
+/* -------------------------------------------------- */
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* [1~7주차] 진한 올리브 그린 포인트 */
+li:nth-child(-n+7) {
+  background-color: #e3e7db;
+  border: 1px solid #c8d0bc;
+  border-left: 6px solid #355340;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: #1e2920;
+}
+
+li:nth-child(-n+7) a {
+  color: #355340;
+  font-weight: 700;
+}
+
+/* [8~15주차] 연한 베이지/회색 톤 */
+li:nth-child(n+8) {
+  background-color: #ffffff;
+  border: 1px solid #e2e0d5;
+  border-left: 6px solid #b0b8aa;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: #889286;
+  opacity: 0.85;
+}
+
+li:nth-child(n+8) a {
+  color: #717a6f;
+}
+
+/* -------------------------------------------------- */
+/* 🛠️ 표(Table) 구역 설정 및 글씨 찌그러짐 방지 */
+/* -------------------------------------------------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: auto;
+}
+
+th, td {
+  padding: 16px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e0d5;
+  word-break: keep-all;
+}
+
+th {
+  background-color: #e3e7db !important;
+  color: #1e2920;
+  font-weight: 700;
+  white-space: nowrap;
+  border-bottom: 2px solid #bdc5b3;
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888888;
+  border-top: 1px solid #e2e0d5;
+  padding-top: 30px;
+  margin-top: 60px;
+}

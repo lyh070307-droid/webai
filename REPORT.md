@@ -59,11 +59,11 @@
 
 | F-03 | 실적 4건 이상, 고교 실적 포함, 시기/분류/내용/역할 표 구성 및 역순 정렬 | Pass | [캡처](images/check_F03.png) |
 
-| F-04 | 이번 학기 수강과목 목록 및 전공/교양 이수 구분 표시 | (Pass) | [캡처](images/check_F04.png) |
+| F-04 | 이번 학기 수강과목 목록 및 전공/교양 이수 구분 표시 | Pass | [캡처](images/check_F04.png) |
 
-| F-05 | 「웹프로그래밍및AI에이전트활용」 앵커 링크 연결 및 1~15주차 실습/예정 구분 | (Pass) | [캡처](images/check_F05.png) |
+| F-05 | 「웹프로그래밍및AI에이전트활용」 앵커 링크 연결 및 1~15주차 실습/예정 구분 | Pass | [캡처](images/check_F05.png) |
 
-| F-06 | 하단 footer에 `YYYY-MM-DD` 형식 최종수정일 표기 및 커밋 날짜 일치 | (Pass) | [캡처](images/check_F06.png) |
+| F-06 | 하단 footer에 `YYYY-MM-DD` 형식 최종수정일 표기 및 커밋 날짜 일치 | Pass | [캡처](images/check_F06.png) |
 
 | Q-HTML | W3C HTML 검사기(https://validator.w3.org/)로 배포 URL 검사 | ( ) | ( ) |
 
