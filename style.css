@@ -9,18 +9,19 @@
 /* 1. 전체 화면 기본 및 최소 너비 고정 */
 html {
   width: 100%;
-  min-width: 1000px; /* 창이 작아져도 1000px 밑으로 줄어들거나 찌그러지지 않음 */
+  min-width: 1000px;
   background-color: #f6f5f0;
 }
 
 body {
-  width: 1000px !important; /* 가로 너비 1000px 완전 고정 */
+  width: 1000px !important;
   min-width: 1000px !important;
-  margin: 0 auto !important; /* 큰 화면에서는 가운데 정렬 */
+  margin: 0 auto !important;
   padding: 40px 20px;
   background-color: #f6f5f0;
   color: #2b332c;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  /* W3C CSS 검사기 경고를 해결하기 위한 표준 폰트 지정 형식 */
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
   line-height: 1.6;
 }
 
@@ -32,16 +33,17 @@ header, section {
   margin-bottom: 50px;
 }
 
+/* 🎯 h1 스타일을 과하지 않고 깔끔하고 세련되게 보정 */
 h1 {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #1e2920;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   margin-bottom: 12px;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: #1e2920;
   margin-bottom: 20px;
@@ -58,7 +60,7 @@ ul, ol {
   padding: 0;
 }
 
-/* [1~7주차] 진한 올리브 그린 포인트 */
+/* [1~7주차] 진한 올리브 그린 포인트 (진행/완료 항목) */
 li:nth-child(-n+7) {
   background-color: #e3e7db;
   border: 1px solid #c8d0bc;
@@ -74,7 +76,7 @@ li:nth-child(-n+7) a {
   font-weight: 700;
 }
 
-/* [8~15주차] 연한 베이지/회색 톤 */
+/* [8~15주차] 연한 베이지/회색 톤 (예정/미진행 항목) */
 li:nth-child(n+8) {
   background-color: #ffffff;
   border: 1px solid #e2e0d5;
