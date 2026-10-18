@@ -21,7 +21,6 @@ body {
   background-color: #f6f5f0;
   color: #2b332c;
   /* W3C 검사기 경고를 일으키는 벤더 폰트를 전부 제거한 표준 폰트 선언 */
-  font-family: Pretendard, sans-serif;
   line-height: 1.6;
 }
 
