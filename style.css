@@ -20,8 +20,8 @@ body {
   padding: 40px 20px;
   background-color: #f6f5f0;
   color: #2b332c;
-  /* W3C CSS 검사기 경고를 해결하기 위한 표준 폰트 지정 형식 */
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  /* W3C 검사기 경고를 일으키는 벤더 폰트를 전부 제거한 표준 폰트 선언 */
+  font-family: Pretendard, sans-serif;
   line-height: 1.6;
 }
 
@@ -33,7 +33,6 @@ header, section {
   margin-bottom: 50px;
 }
 
-/* 🎯 h1 스타일을 과하지 않고 깔끔하고 세련되게 보정 */
 h1 {
   font-size: 1.5rem;
   font-weight: 700;
